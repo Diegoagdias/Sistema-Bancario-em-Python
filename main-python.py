@@ -2,7 +2,7 @@ valor = 0.0
 valor_real = 0.0
 extrato = []
 def mostrar_menu():
-    print("========== BANCO PYTHON ==========")
+    print("="*10 + " BANCO PYTHON " + "="*10)
     print("[1] Depósito")
     print("[2] Saque")
     print("[3] Extrato")
@@ -31,7 +31,7 @@ while True:
             else:
                  print("Não pode Sacar Valor Negativo ou Zero\n")
       elif escolha == 3: # Opção Extrato
-            print("\n========== EXTRATO ==========")
+            print("\n"+ "="*10 +" EXTRATO " + "="*10)
 
             if extrato: # Verifica se a lista não está vazia
                 for transacao in extrato: # Para cada item na lista extrato...
@@ -39,7 +39,7 @@ while True:
             else:
                 print("Não foram realizadas movimentações.")
             print(f"\nSaldo atual: R$ {valor_real:.2f}")
-            print("=============================\n")
+            print("=" * 30 + "\n") #MULTIPLICA = POR 30 PARA EXIBIR
       elif escolha == 4:
           print("Saindo do sistema...")
           break
